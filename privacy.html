@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="오늘의 궁금 자동 제작에서 처리하는 Google·YouTube 데이터, 로컬 보관, AI 작업환경 활용 및 연결 해제 방법을 안내합니다.">
+  <title>개인정보처리방침 · 오늘의 궁금 자동 제작</title>
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="site-header"><div class="wrap header-row"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">?</span>오늘의 궁금 자동 제작</a><nav aria-label="주 메뉴"><a href="index.html">앱 안내</a><a href="privacy.html" aria-current="page">개인정보처리방침</a><a href="terms.html">이용 안내</a></nav></div></header>
+  <main class="wrap article" id="main">
+    <p class="eyebrow">데이터 처리 안내</p>
+    <h1>개인정보처리방침</h1>
+    <p class="document-date">문서 작성: 2026년 11월 5일</p>
+    <p class="lead">오늘의 궁금 자동 제작은 <a href="https://www.youtube.com/channel/UCZVqo-pDeFf8M0gQ5EQ7CUw">‘오늘의 궁금’ 채널 운영자</a>가 자신의 채널을 운영하는 데 사용하는 개인용 데스크톱 프로그램입니다. 이 문서는 현재 프로그램과 운영 과정에서 정보를 다루는 방식을 설명합니다.</p>
+
+    <section aria-labelledby="data-title">
+      <h2 id="data-title">처리하는 정보와 목적</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th scope="col">정보</th><th scope="col">이용 및 보관</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">OAuth 인증 정보</th><td>Google API 연결과 권한 갱신에 사용하는 액세스·갱신 토큰을 PC에 보관합니다. 현재 Windows 구현은 토큰을 해당 Windows 사용자 계정의 DPAPI로 암호화합니다. OAuth 클라이언트 설정도 별도 로컬 파일에 보관합니다.</td></tr>
+          <tr><th scope="row">채널 정보</th><td>채널 ID와 이름을 읽어 업로드 대상이 운영자의 채널인지 확인하고 로컬 연결 설정에 기록합니다.</td></tr>
+          <tr><th scope="row">영상과 업로드 정보</th><td>대본, 생성 영상, 제목·설명·공개 범위, 영상 ID와 업로드·처리 상태를 제작 및 중복 업로드 방지에 사용합니다. 파일과 작업 기록을 PC에 보관합니다.</td></tr>
+          <tr><th scope="row">영상별 집계 성과</th><td>조회수, 참여 조회수, 시청 시간·시청 비율, 좋아요·공유, 구독자 증가 등을 읽어 성과를 검토합니다. 조회 결과를 작업 기록이나 분석 자료로 PC에 저장할 수 있습니다. 현재 분석 기능은 개별 시청자의 신원을 조회하지 않습니다.</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section aria-labelledby="services-title">
+      <h2 id="services-title">Google·YouTube와 AI 작업환경</h2>
+      <p>인증과 API 요청은 Google에 전송됩니다. 영상을 업로드하면 영상 파일, 제목·설명과 업로드 설정이 Google·YouTube에 전달됩니다. 공개 영상과 메타데이터는 지정한 공개 범위에 따라 YouTube에서 표시됩니다.</p>
+      <p>기획과 운영을 돕는 Codex 등의 AI 작업환경에서 대본, 영상 메타데이터, 집계 성과를 참조할 수 있습니다. 이 경우 해당 정보는 사용하는 AI 서비스에서 처리되므로 모든 정보가 PC 안에서만 처리되는 구조는 아닙니다. 분석 자료에는 인증 토큰이나 클라이언트 비밀값을 포함하지 않도록 운영합니다.</p>
+      <p>Google·YouTube의 데이터 처리는 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>을 따릅니다. AI 작업환경에서 처리하는 정보에는 해당 서비스의 정책과 사용하는 계정의 설정이 적용됩니다.</p>
+    </section>
+
+    <section aria-labelledby="retention-title">
+      <h2 id="retention-title">보관 기간과 삭제</h2>
+      <p>현재 프로그램에는 일괄 자동 삭제 기한이 설정되어 있지 않습니다. 인증 파일, 생성 영상, 업로드 기록과 저장한 분석 자료는 운영자가 관리하고 삭제합니다. PC의 백업이나 AI 작업환경에 남은 기록은 각각의 저장 위치에서 별도로 관리해야 합니다.</p>
+      <ol>
+        <li>PC의 자동 실행과 업로드 작업을 중지합니다.</li>
+        <li><a href="https://myaccount.google.com/connections">Google 계정의 연결된 앱 관리</a>에서 이 앱의 액세스 권한을 삭제합니다.</li>
+        <li>운영자가 PC의 인증 파일과 필요 없는 영상·작업·분석 기록을 삭제합니다.</li>
+      </ol>
+      <div class="notice"><p><strong>연결 해제와 로컬 삭제는 서로 별개입니다.</strong> Google 액세스 권한을 철회해도 기존 로컬 파일이 자동 삭제되지는 않습니다. PC에서 데이터를 삭제해도 YouTube에 이미 업로드한 영상은 삭제되지 않으며, 영상 삭제나 공개 범위 변경은 YouTube Studio에서 별도로 처리합니다.</p></div>
+      <p class="small" style="margin-top:18px"><a href="https://support.google.com/accounts/answer/13533235?hl=ko">Google의 연결 및 액세스 권한 관리 안내</a></p>
+    </section>
+
+    <section aria-labelledby="website-title">
+      <h2 id="website-title">이 안내 사이트</h2>
+      <p>이 정적 안내 페이지에는 회원가입, 로그인, 입력 폼, 광고 또는 방문 분석 스크립트를 넣지 않았습니다. 사이트의 호스팅 제공자는 페이지 제공과 보안을 위해 IP 주소 등 접속 정보를 자체 정책에 따라 처리할 수 있습니다. 외부 링크로 이동하면 해당 사이트의 데이터 처리 방식이 적용됩니다.</p>
+    </section>
+
+    <section aria-labelledby="operator-title">
+      <h2 id="operator-title">운영 및 문서 관리</h2>
+      <p>이 도구의 운영자와 데이터 관리 주체는 <a href="https://www.youtube.com/channel/UCZVqo-pDeFf8M0gQ5EQ7CUw">오늘의 궁금 채널 운영자</a>입니다. 본인만 사용하는 도구이므로 데이터 확인·연결 해제·삭제는 운영자가 직접 수행합니다. 기능이나 정보 처리 방식이 달라지면 이 안내를 함께 수정합니다.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><p>오늘의 궁금 자동 제작<br>개인 채널 운영 도구</p><div class="footer-links"><a href="index.html">앱 안내</a><a href="terms.html">이용 안내</a></div></div></footer>
+</body>
+</html>
